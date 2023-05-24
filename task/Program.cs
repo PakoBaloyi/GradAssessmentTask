@@ -12,27 +12,15 @@ namespace AssessmentTask
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Select 1: Q1"+"\n"+"2: Q2" + "\n" +  "3: Q3" + "\n" + "4: Q4" + "\n" + "5: Q5");
-            int response= int.Parse(Console.ReadLine());
             
-            switch (response)
-            {
-                case 1:
-                      Utilities.Q1();
-                      break;
-                case 2:
-                      Utilities.Q2();
-                      break;
-                case 3:
-                    break;
-                case 4:
-                    Utilities.Q1();
-                    break;
-                case 5:
-                    Utilities.Q1();
-                    break;
-            }
-            
+            Utilities.Q1();
+            Utilities.Q2();
+            Console.WriteLine("Q3 Enter a string");
+            string input = Console.ReadLine();
+            Utilities.ReversedWordsInSentence((input));
+            Utilities.Q4();
+            Utilities.Q5();
+
         }
     }
 }
